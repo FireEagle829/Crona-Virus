@@ -6,6 +6,77 @@
     <title>CoronaVirus Update</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1>CoronaVirus - Update Report</h1>
+    </header>
+
+    <!-- Information Section -->
+    <section class="container">
+
+        <!-- Infection Div -->
+        <div class="container_info container--infection">
+            <table class="table_info container__infection--table" border="">
+                <thead>
+                    <th class="container__infection--label">Total Infections</th>
+                </thead>
+                <tr>
+                    <td class="container__infection--total"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Death Div -->
+        <div class="container_info container--death">
+            <table class="table_info container__death--table" border="1">
+                <thead>
+                    <th class="container__death--label">Total Deaths</th>
+                </thead>
+                <tr>
+                    <td class="container__death--total"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Recovery Div -->
+        <div class="container_info container--recovery">
+            <table class="table_info container__recovery--table" border="1">
+                <thead>
+                    <th class="container__recovery--label">Total Recoveries</th>
+                </thead>
+                <tr>
+                    <td class="container__recovery--total"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Update Table Section -->
+    <section class="update">
+
+        <!-- Search Section -->
+        <div class="search">
+            <form action="">
+                <label for="country">Search By Country: </label>
+                <input type="text" id="country">
+                <button class="searchButton">Search</button>
+            </form>
+        </div>
+
+        <!-- Main Table Section -->
+        <div class="mainTable">
+            <table border="1">
+                <thead>
+                    <th class="countryName">Country</th>
+                    <th class="totalCases">Total Cases</th>
+                    <th class="newCases">New Cases</th>
+                    <th class="totalDeaths">Total Deaths</th>
+                    <th class="newDeaths">New Deaths</th>
+                    <th class="totalRecovered">Total Recovered</th>
+                    <th class="activeCases">Active Cases</th>
+                    <th class="criticalCases">Critical Cases</th>
+                </thead>
+            </table>
+        </div>
+    </section>
 </body>
 </html>
