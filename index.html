@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoronaVirus Update</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <h1>CoronaVirus - Update Report</h1>
+        CoronaVirus - Update Report
     </header>
 
     <!-- Information Section -->
@@ -15,52 +17,40 @@
 
         <!-- Infection Div -->
         <div class="container_info container--infection">
-            <table class="table_info container__infection--table" border="">
-                <thead>
-                    <th class="container__infection--label">Total Infections</th>
-                </thead>
-                <tr>
-                    <td class="container__infection--total"></td>
-                </tr>
-            </table>
+            <h3>Total Cases</h3>
+            <span id="value-infected"></span>
         </div>
 
         <!-- Death Div -->
         <div class="container_info container--death">
-            <table class="table_info container__death--table" border="1">
-                <thead>
-                    <th class="container__death--label">Total Deaths</th>
-                </thead>
-                <tr>
-                    <td class="container__death--total"></td>
-                </tr>
-            </table>
+            <h3>Total Deaths</h3>
+            <span id="value-death"></span>
+
         </div>
 
         <!-- Recovery Div -->
         <div class="container_info container--recovery">
-            <table class="table_info container__recovery--table" border="1">
-                <thead>
-                    <th class="container__recovery--label">Total Recoveries</th>
-                </thead>
-                <tr>
-                    <td class="container__recovery--total"></td>
-                </tr>
-            </table>
+            <h3>Total Recoveries</h3>
+            <span id="value-recovery"></span>
+
         </div>
+
     </section>
+    <br>
 
     <!-- Update Table Section -->
     <section class="update">
 
         <!-- Search Section -->
-        <div class="search">
-            <form action="">
-                <label for="country">Search By Country: </label>
-                <input type="text" id="country">
-                <button class="searchButton">Search</button>
-            </form>
-        </div>
+        <fieldset>
+            <legend>Search for a country</legend>
+            <div class="search">
+                <form action="">
+                    <input type="text" id="country" placeholder="Country Name">
+                    <button class="searchButton">Search</button>
+                </form>
+            </div>
+        </fieldset>
 
         <!-- Main Table Section -->
         <div class="mainTable">

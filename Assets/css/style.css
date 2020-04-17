@@ -1,0 +1,145 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    background-color: #382633;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-size: 35px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 70%;
+    margin: auto;
+    height: 300px;
+    font-size: 35px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.container_info {
+    border: 3px ridge #806D40;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    height: 2px;
+    border: 1px solid #382633;
+    background-color: #382633;
+}
+
+.container_info.container--infection{
+        background-color: rgb(255, 120, 80);
+    }
+
+.container_info.container--death{
+    background-color: rgb(253, 93, 93);
+}
+
+.container_info.container--recovery{
+    background-color: rgb(97, 255, 97);
+}
+
+fieldset {
+    border:3px ridge brown;
+    background-color: #92BDA3;
+    width: 300px;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+.container_info:not(:hover) {
+    transition-duration: 0.3s;
+}
+
+
+.container_info:hover {
+    transition-duration: 0.3s;
+    border:4px ridge darkred ;
+}
+
+
+.container_info.container--recovery:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+.container_info.container--death:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.container_info.container--infection:hover {
+    background-color: rgb(255, 140, 0);
+}
+
+legend {
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid black;    
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+.searchButton {
+    width: 100px;
+    border-radius: 5px;
+    background-color:rgb(35, 241, 145);
+    border: 1px solid rgb(35, 241, 145);
+    color: white;
+    height: 25px;
+}
+
+
+.searchButton:hover {
+    transition-duration: 0.3s;
+    background-color:rgb(0, 250, 21);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px  #383838;
+}
+
+
+#country {
+    border-radius: 5px;
+    border: none;
+}
+
+#country:focus {
+    transition-duration: 0.3s;
+    border: 2px solid lightblue;
+}
+
+.mainTable {
+    padding: 30px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    color: white;
+    border-radius: 8px;
+    border: 2px ridge black;
+}
