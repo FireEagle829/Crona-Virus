@@ -1,0 +1,254 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container_info h3 {
+    margin-bottom: 0;
+}
+
+.header {
+    background-color: #382633;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-size: 35px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    height: 300px;
+    font-size: 35px;
+    align-items: center;
+}
+
+.container_info {
+    border: 3px ridge #806D40;
+    border-radius: 15px;
+    width: 33.33333%;
+    text-align: center;
+    color: white;
+    
+}
+
+hr {
+    height: 2px;
+    border: 1px solid #382633;
+    background-color: #382633;
+}
+
+.container_info.container--infection{
+        background-color: rgb(255, 120, 80);
+    }
+
+.container_info.container--death{
+    background-color: rgb(253, 93, 93);
+}
+
+.container_info.container--recovery{
+    background-color: rgb(97, 255, 97);
+}
+
+fieldset {
+    border:3px ridge brown;
+    background-color: #92BDA3;
+    width: 300px;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+.container_info:not(:hover) {
+    transition-duration: 0.3s;
+}
+
+
+.container_info:hover {
+    transition-duration: 0.3s;
+    border:4px ridge darkred ;
+}
+
+
+.container_info.container--recovery:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+.container_info.container--death:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.container_info.container--infection:hover {
+    background-color: rgb(255, 140, 0);
+}
+
+legend {
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+}
+
+fieldset {
+    border-radius: 10px;
+    margin: auto;
+    width:520px;
+}
+
+.searchButton {
+    width: 100px;
+    border-radius: 5px;
+    background-color:rgb(35, 241, 145);
+    border: 1px solid rgb(35, 241, 145);
+    margin-left: 5px;
+    color: black;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+
+.searchButton:hover {
+    transition-duration: 0.3s;
+    background-color:rgb(0, 250, 21);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px  #383838;
+}
+
+
+#country {
+    border: 1px solid black;
+    width: 400px;
+    height: 25px;
+}
+
+#country:focus {
+    transition-duration: 0.3s;
+    border: 2px solid lightblue;
+}
+
+.mainTable {
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    color: white;
+    border-radius: 8px;
+    border: 2px ridge black;
+    text-align: center;
+    transition:all 0.5s ease-out;
+}
+
+@media screen and (max-width: 1210px) {
+    .container_info{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .container_info {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container_info{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .searchButton {
+        width: 400px;
+        margin: auto;
+        height: 20px;
+        font-size: 10px;
+    }
+    fieldset {
+        text-align: center;
+        width: 400px;
+        height: 60px;
+    }
+    legend {
+        font-size: 10px;
+    }
+    #country {
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .container_info{
+        font-size: 10px;
+        padding: 10px;
+        padding-bottom: 12px;
+    }
+    .mainTable {
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 465px) {
+    .header {
+        font-size: 25px;
+    }
+    .mainTable {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    fieldset {
+        width: 200px;
+        height: 55px;
+    }
+    .searchButton {
+        width: 200px;
+        font-size: 10px;
+    }
+    #country {
+        width: 200px;
+        height: 10px;
+        font-size: 10px;
+    }
+    .mainTable {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    thead {
+        font-size: 10px;
+    }
+    td {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .mainTable {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
