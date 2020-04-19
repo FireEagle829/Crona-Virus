@@ -227,12 +227,31 @@ table {
 
 @media screen and (max-width: 840px) {
     thead {
+        font-size: 20px;
+    }
+    td {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    thead {
+        font-size: 15px;
+    }
+    td {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    thead {
         font-size: 10px;
     }
     td {
         font-size: 10px;
     }
 }
+
 
 @media screen and (max-width: 350px) {
     .mainTable {
@@ -251,4 +270,43 @@ table {
     text-align: center;
     text-transform: capitalize;
     text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+th {
+    color: black;
+}
+
+.copyright {
+    color: gray;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.header-country {
+    background-color: rgb(136, 134, 134)
+}
+
+.header-totalCases {
+    background-color: rgb(255, 145, 0);
+}
+
+.header-newCases {
+    background-color: rgb(252, 183, 35);
+}
+
+.header-totalDeaths {
+    background-color: rgb(255, 0, 0);
+}
+
+.header-newDeaths {
+    background-color:rgb(253, 57, 22);
+}
+
+.header-newRecovered {
+    background-color: rgb(11, 255, 11);
+}
+
+.header-totalRecovered {
+    background-color:green ;
 }
