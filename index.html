@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1 .0">
     <title>CoronaVirus Update</title>
     <link rel="stylesheet" href="./Assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <script src="./Assets/js/app.js" defer></script>
 </head>
+
 <body>
     <header class="header">
         CoronaVirus - Update Report
@@ -18,20 +21,20 @@
         <!-- Infection Div -->
         <div class="container_info container--infection">
             <h3>Total Cases</h3>
-            <span id="value-infected">213414</span>
+            <span id="value-infected"></span>
         </div>
 
         <!-- Death Div -->
         <div class="container_info container--death">
             <h3>Total Deaths</h3>
-            <span id="value-death">2141234</span>
+            <span id="value-death"></span>
 
         </div>
 
         <!-- Recovery Div -->
         <div class="container_info container--recovery">
             <h3>Total Recoveries</h3>
-            <span id="value-recovery">134321</span>
+            <span id="value-recovery"></span>
 
         </div>
 
@@ -40,12 +43,12 @@
 
     <!-- Update Table Section -->
     <section class="update">
-
+        <h1 class="alert"></h1>
         <!-- Search Section -->
         <fieldset>
             <legend>Search for a country</legend>
             <div class="search">
-                <form action="">
+                <form action="#">
                     <input type="text" id="country" placeholder="Country Name">
                     <button class="searchButton">Search</button>
                 </form>
@@ -56,29 +59,20 @@
         <div class="mainTable">
             <table border="1">
                 <thead>
-                    <th class="countryName">Country</th>
-                    <th class="totalCases">Total Cases</th>
-                    <th class="newCases">New Cases</th>
-                    <th class="totalDeaths">Total Deaths</th>
-                    <th class="newDeaths">New Deaths</th>
-                    <th class="totalRecovered">Total Recovered</th>
-                    <th class="activeCases">Active Cases</th>
-                    <th class="criticalCases">Critical Cases</th>
+                    <th>Country</th>
+                    <th>Total Cases</th>
+                    <th>New Cases</th>
+                    <th>Total Deaths</th>
+                    <th>New Deaths</th>
+                    <th>Total Recovered</th>
+                    <th>New Recovered</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>eadwf</td>
-                        <td>awef</td>
-                        <td>eadwf</td>
-                        <td>awef</td>
-                        <td>eadwf</td>
-                        <td>awef</td>
-                        <td>eadwf</td>
-                        <td>awef</td>
-                    </tr>
+                <tbody class="table-body">
+
                 </tbody>
             </table>
         </div>
     </section>
 </body>
+
 </html>

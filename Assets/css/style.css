@@ -6,8 +6,6 @@ body {
     padding: 0;
 }
 
-
-
 .container_info h3 {
     margin-bottom: 0;
 }
@@ -21,7 +19,6 @@ body {
     width: 90%;
     font-size: 35px;
 }
-
 
 .container {
     display: flex;
@@ -40,7 +37,6 @@ body {
     width: 33.33333%;
     text-align: center;
     color: white;
-    
 }
 
 hr {
@@ -49,39 +45,34 @@ hr {
     background-color: #382633;
 }
 
-.container_info.container--infection{
-        background-color: rgb(255, 120, 80);
-    }
+.container_info.container--infection {
+    background-color: rgb(255, 120, 80);
+}
 
-.container_info.container--death{
+.container_info.container--death {
     background-color: rgb(253, 93, 93);
 }
 
-.container_info.container--recovery{
+.container_info.container--recovery {
     background-color: rgb(97, 255, 97);
 }
 
 fieldset {
-    border:3px ridge brown;
+    border: 3px ridge brown;
     background-color: #92BDA3;
     width: 300px;
     margin-right: auto;
     margin-bottom: 50px;
 }
 
-
-
-
 .container_info:not(:hover) {
     transition-duration: 0.3s;
 }
 
-
 .container_info:hover {
     transition-duration: 0.3s;
-    border:4px ridge darkred ;
+    border: 4px ridge darkred;
 }
-
 
 .container_info.container--recovery:hover {
     background-color: rgb(0, 255, 0);
@@ -104,13 +95,13 @@ legend {
 fieldset {
     border-radius: 10px;
     margin: auto;
-    width:520px;
+    width: 520px;
 }
 
 .searchButton {
     width: 100px;
     border-radius: 5px;
-    background-color:rgb(35, 241, 145);
+    background-color: rgb(35, 241, 145);
     border: 1px solid rgb(35, 241, 145);
     margin-left: 5px;
     color: black;
@@ -118,14 +109,12 @@ fieldset {
     padding: 5px 0;
 }
 
-
 .searchButton:hover {
     transition-duration: 0.3s;
-    background-color:rgb(0, 250, 21);
+    background-color: rgb(0, 250, 21);
     cursor: pointer;
-    box-shadow: 5px 5px 10px  #383838;
+    box-shadow: 5px 5px 10px #383838;
 }
-
 
 #country {
     border: 1px solid black;
@@ -145,17 +134,18 @@ fieldset {
 }
 
 table {
+    font-size: 30px;
     width: 90%;
     margin: auto;
     color: white;
     border-radius: 8px;
     border: 2px ridge black;
     text-align: center;
-    transition:all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width: 1210px) {
-    .container_info{
+    .container_info {
         font-size: 25px;
     }
 }
@@ -171,7 +161,7 @@ table {
 }
 
 @media screen and (max-width: 680px) {
-    .container_info{
+    .container_info {
         font-size: 15px;
     }
 }
@@ -197,7 +187,7 @@ table {
 }
 
 @media screen and (max-width: 514px) {
-    .container_info{
+    .container_info {
         font-size: 10px;
         padding: 10px;
         padding-bottom: 12px;
@@ -206,7 +196,6 @@ table {
         margin-top: 30px;
     }
 }
-
 
 @media screen and (max-width: 465px) {
     .header {
@@ -243,7 +232,6 @@ table {
     td {
         font-size: 10px;
     }
-
 }
 
 @media screen and (max-width: 350px) {
@@ -251,4 +239,16 @@ table {
         padding-left: 5px;
         padding-right: 5px;
     }
+}
+
+.change-background {
+    background-color: aliceblue;
+    color: black;
+}
+
+.alert {
+    color: antiquewhite;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.8);
 }
